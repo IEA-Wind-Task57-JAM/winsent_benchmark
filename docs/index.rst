@@ -15,7 +15,7 @@ How to Participate
 
 - Review the page "Description of the benchmark" for campaign context and motivation.
 - Contact the benchmark leader and participate in working group meetings.
-- Submit modeling results following guidelines given in the "Phase I" and "Phase II" pages.
+- Submit modeling results following guidelines given in the :doc:`submissions` page.
 
 .. toctree::
    :maxdepth: 3
