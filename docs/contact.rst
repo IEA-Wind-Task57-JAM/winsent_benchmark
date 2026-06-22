@@ -5,7 +5,7 @@ Contact
 - IEA Wind Task 57 JAM Operating Agent: Regis Thedin, regis.thedin@nlr.gov
 
 Websites
------------------
+--------
 
 - WINSENT project website: https://www.winsent.de/en
 - WINSENT benchmark data: https://zenodo.org/communities/jam 

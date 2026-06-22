@@ -7,27 +7,23 @@ Intro
 -----
 
 The WINSENT benchmark is focused on atmospheric inflow, turbine response, and wake behavior in complex terrain.
-It follows the collaborative benchmarking style used in the prior JAM benchmark efforts, with staged participation and shared reference data.
-
-Scope
------
-
-WINSENT is a research test site on the Swabian Alb in southern Germany, located near steep terrain transitions at the Albtrauf.
-The benchmark scope emphasizes complex-terrain flow conditions, inflow characterization, and turbine/wake modeling.
+It follows the collaborative benchmarking style used in the prior JAM benchmark efforts, with staged participation 
+and shared reference data.
 
 How to Participate
 ------------------
 
-- Review the Overview page for campaign context and motivation.
-- Contact benchmark leader and participate in working group meetings.
-- Submit modeling results following guidelines given in the Submission page.
+- Review the page "Description of the benchmark" for campaign context and motivation.
+- Contact the benchmark leader and participate in working group meetings.
+- Submit modeling results following guidelines given in the "Phase I" and "Phase II" pages.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents
 
-   overview
-   phases
-   data_and_inputs
+   description
+   winsent
+   phase_I
+   phase_II
    submissions
    contact

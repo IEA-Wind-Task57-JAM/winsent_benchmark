@@ -1,0 +1,16 @@
+[workspace]
+authors = ["slott1 <sarah.lott@zsw-bw.de>"]
+channels = ["conda-forge"]
+name = "winsent_benchmark"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+sphinx = ">=9.0.4,<10"
+pip = ">=26.1.2,<27"
+
+[pypi-dependencies]
+sphinx-autobuild = ">=2025.8.25, <2026"
