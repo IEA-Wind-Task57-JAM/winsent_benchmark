@@ -118,6 +118,8 @@ will be assigned a high LAI value, and all data after October 13, 2025, will be 
 The period in between will be excluded from the analysis, as satellite data are not continuously available during 
 this time, making the determination of LAI impossible.
 
+@HS Esslingen: Link zu den "besseren" LAI Daten auf Zenodo einfügen + kurze Beschreibung
+
 Terrain data
 ------------
 @HS Esslingen: bitte ergänzen

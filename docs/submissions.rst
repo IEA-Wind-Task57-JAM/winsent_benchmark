@@ -1,12 +1,34 @@
 Submissions
 ===========
 
-Instructions
-------------
+Phase I
+-------
 
-Submission instructions will be posted by phase.
+Variables to submit
 
-Submission format
------------------
+- Velocity components (u v w) in lat, lon system
+- horizontal wind speed and direction
+- TKE
 
-To be updated with templates, variable naming conventions, and upload locations.
+optional: 
+- potential tempetature
+- pressure 
+- humidity 
+- precipitation 
+
+alles auf allen Höhen, wir schauen dann wo Vergleichswerte verfügbar sind
+Sonics auf 98m können nicht genutzt werden
+
+1 Ergebnisdatei für jeden Fall (LAI + Stabilität -> 6 Dateien)
++ optional Ergebnisse für die drei ausgewählten Tage
+
+
+.. Instructions
+.. ------------
+
+.. Submission instructions will be posted by phase.
+
+.. Submission format
+.. -----------------
+
+.. To be updated with templates, variable naming conventions, and upload locations.
