@@ -47,45 +47,51 @@ based on measurements at hub height at MMNW in 2025.
 Coordinates
 -----------
 
-All data are referenced to the WGS84 coordinate system. The center coordinates of the meteorological masts and turbine towers 
-are calculated from coordinates measured on site by a surveying office in March 2024. The coordinates of the lidar are 
-obtained from GPS measurements taken during the installation, and the values are verified using the GIS system.
+The current official reference system for position and elevation data in Germany is the German Reference Network (DREF91), 
+which is aligned with the European Terrestrial Reference System 1989 (ETRS89): ETRS89/DREF91/2016 + DHHN2016.
+The location is specified in longitude and latitude, and the elevation is given in meters relative to NHN. 
+Conversion to other reference systems is possible with very high accuracy.
+The center coordinates of the meteorological masts and turbine towers are calculated from coordinates measured 
+on site by a surveying office in March 2024. The coordinates of the lidar are obtained from GPS measurements 
+taken during the installation, and the values are verified using the GIS system.
 
 .. list-table:: 
    :header-rows: 1
 
    * - Structure
-     - Latitude
-     - Longitude
-     - Elevation (a.s.l.) [m]
+     - Longitude (°)
+     - Latitude (°) 
+     - Height above NHN (DHHN2016)
    * - RWTN
-     - Row 1 Col2
-     - Row 1 Col3
-     - Row 1 Col4
+     - 9.837730119766245
+     - 48.666210346923343
+     - 666.03
    * - RWTS
-     - Row 2 Col2
-     - Row 2 Col3
-     - Row 2 Col4
+     - 9.837125414111535	
+     - 48.664973120775961
+     - 666.61	
    * - MMNW
-     - Row 2 Col2
-     - Row 2 Col3
-     - Row 2 Col4
+     - 9.835916275260756	
+     - 48.666156314185706
+     - 665.00
    * - MMNE
-     - Row 2 Col2
-     - Row 2 Col3
-     - Row 2 Col4
+     - 9.839397041100227	
+     - 48.666276556003453
+     - 662.47
    * - MMSW
-     - Row 2 Col2
-     - Row 2 Col3
-     - Row 2 Col4
+     - 9.835293548617226
+     - 48.664941603518201	
+     - 664.57
    * - MMSE
-     - Row 2 Col2
-     - Row 2 Col3
-     - Row 2 Col4
+     - 9.838955754497034	
+     - 48.665024675916257	
+     - 664.91
    * - Lidar (L140)
      - Row 2 Col2
      - Row 2 Col3
      - Row 2 Col4
+
+# TODO: Koordinaten Lidar
 
 Meteorological measurement masts
 --------------------------------
@@ -94,6 +100,8 @@ All four measurement masts are equipped with a wide range of measuring instrumen
 shown in the schematic diagram below.
 
 .. image:: images/sensors_met_mast.png
+
+@HS Esslingen: hier fehlt jetzt noch der Niederschlagssensor, welchen wollt ihr denn verwenden?
 
 For the sake of simplicity, the benchmark assumes that all measuring instruments are positioned in the center 
 of the measuring mast and that all measuring masts are equipped identically. In reality, the measuring instruments 

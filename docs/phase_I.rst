@@ -1,6 +1,8 @@
 Benchmark phase I
 =================
 
+# TODO: Höhenangaben checken, keine Referenz a.s.l. sondern stattdessen NHN
+
 Data processing
 ---------------
 
@@ -44,6 +46,8 @@ The stratification is assumed to be unstable if :math:`R_B<-0.17` and stable as 
 
 Inflow data
 -----------
+
+# TODO: Dateistruktur und Dateinamen aktualisieren, Höhenangaben checken, kein Verweis auf komplette Lidar Daten
 
 After applying the data filtering described above, the various datasets are analyzed (see following table). 
 For each dataset the number of 10-minute periods is calculated and a power-law curve is fitted to the data. 

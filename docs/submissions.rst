@@ -11,7 +11,7 @@ Variables to submit
 - TKE
 
 optional: 
-- potential tempetature
+- potential temperature
 - pressure 
 - humidity 
 - precipitation 
