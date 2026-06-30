@@ -48,7 +48,7 @@ Coordinates
 -----------
 
 The current official reference system for position and elevation data in Germany is the German Reference Network (DREF91), 
-which is aligned with the European Terrestrial Reference System 1989 (ETRS89): ETRS89/DREF91/2016 + DHHN2016.
+which is aligned with the European Terrestrial Reference System 1989 (ETRS89): ETRS89/DREF91/2016 + DHHN2016 (see https://epsg.io/10293).
 The location is specified in longitude and latitude, and the elevation is given in meters relative to NHN. 
 Conversion to other reference systems is possible with very high accuracy.
 The center coordinates of the meteorological masts and turbine towers are calculated from coordinates measured 
@@ -87,11 +87,11 @@ taken during the installation, and the values are verified using the GIS system.
      - 48.665024675916257	
      - 664.91
    * - Lidar (L140)
-     - Row 2 Col2
-     - Row 2 Col3
-     - Row 2 Col4
+     - 9.819179271256603
+     - 48.673039540602765
+     - 468.80
 
-# TODO: Koordinaten Lidar
+A \*.geojson file containing the coordinates is provided on Zenodo. 
 
 Meteorological measurement masts
 --------------------------------

@@ -1,8 +1,6 @@
 Benchmark phase I
 =================
 
-# TODO: Höhenangaben checken, keine Referenz a.s.l. sondern stattdessen NHN
-
 Data processing
 ---------------
 
@@ -21,7 +19,7 @@ for high LAI and 73 10-minute periods for low LAI.
 
 For classification into stability classes, the Bulk Richardson number is used (see formula below). 
 Temperature and wind speed measurements from the northwestern measuring mast are used to calculate the metric. 
-In general, this data is available at four measurement heights: 25m, 46m, 72m, and 97m a.g.l. (acc. to measuring mast bottom).
+In general, this data is available at four measurement heights: 25m, 46m, 73m, and 97m a.g.l. (acc. to measuring mast bottom).
 We decided not to use the measurements taken at 25m, as they could be affected by the trees in the direction 
 of the inflow. Unfortunately, measurements at the height of 97m have been unavailable for a certain period, 
 so they cannot be used for deriving stability information.
@@ -32,13 +30,13 @@ with
 
 - :math:`g` being the gravitational acceleration
 
-- :math:`T_v` being the absolute virtual temperature (= mean value of virtual temperatures at 46m and 72m)
+- :math:`T_v` being the absolute virtual temperature (= mean value of virtual temperatures at 46m and 73m)
 
-- :math:`\Delta \Theta` being the virtual potential temperature difference between 46m and 72m
+- :math:`\Delta \Theta` being the virtual potential temperature difference between 46m and 73m
 
-- :math:`\Delta z` being the height difference between 46m and 72m
+- :math:`\Delta z` being the height difference between 46m and 73m
 
-- :math:`\Delta V` being the change in horizontal wind speed between 46m and 72m
+- :math:`\Delta V` being the change in horizontal wind speed between 46m and 73m
 
 The classification into stability classes is based on the proposed limit values by Vanderwende and Lundquist (2012) 
 [https://iopscience.iop.org/article/10.1088/1748-9326/7/3/034035/meta].
@@ -49,10 +47,10 @@ Inflow data
 
 After applying the data filtering described above, the various datasets are analyzed (see following table). 
 For each dataset the number of 10-minute periods is calculated and a power-law curve is fitted to the data. 
-Furthermore, the mean wind direction at an altitude of 768.8m (approx. hub height) is calculated. 
+Furthermore, the mean wind direction at an altitude of 768.80m (elevation above NHN, approx. hub height) is calculated. 
 
 .. csv-table::
-   :header: "LAI", "Atmospheric stability", "Number of 10-minute periods", "Power-law curve", "Mean wind direction at 768.8m a.s.l."
+   :header: "LAI", "Atmospheric stability", "Number of 10-minute periods", "Power-law curve", "Mean wind direction at 768.80m NHN"
 
    "high", "unstable", "13", "v = 1.642 * (h-468.8)^0.227", "292.83"
    "",     "neutral", "80", "v = 1.033 * (h-468.8)^0.323", "292.84"
@@ -69,15 +67,15 @@ The folder structure of the inflow data is shown in the following figure.
 
 For each selected 10-minute period, there are two files: 
 
-- one containing the inflow data from the lidar for the selected height range (100m - 400m a.g.l.) 
+- one containing the inflow data from the lidar for the selected height range (100m - 400m a.g.l. :math:`\approx` 569m - 856m NHN) 
 
   ("...lidar_data.csv")
 
-- one containing the inflow data from the lidar for all available heights
+- one containing the inflow data from the lidar for all available heights 
 
   ("...lidar_data_all_heights.csv") 
 
-  This might be of interest for simulations that also use data from layers higher than 400 meters (acc. to the lidar system in the valley, corresponding 868m a.s.l). 
+  This might be of interest for simulations that also use data from layers higher than 400 meters (acc. to the lidar system in the valley). 
 
 The CSV files contain the following information:
 
@@ -96,7 +94,7 @@ The CSV files contain the following information:
        e.g. a value of 15:20:00 includes data from 15:20:00 till 15:29:59
    * - 2
      - height
-     - height above sea level [m]
+     - height [m NHN]
    * - 3
      - wind_speed
      - wind speed [m/s]
@@ -111,4 +109,16 @@ as well as a plot showing the corresponding profiles and the power-law fit (see 
 The file name indicates the associated LAI category and stability class.
 
 .. image:: images/profiles_high_LAI_stable.png
+
+Optional: Simulation using numerical weather prediction (NWP) data
+------------------------------------------------------------------
+
+Three specific days are selected for WRF simulations (or similar models). 
+The selection is based on identifying days with the largest possible number of 10-minute intervals 
+that fulfill the wind direction and wind speed criteria described above.
+
+The selected days are:
+- 8.7.25 (high LAI, predominantly neutral stratification during the analyzed 10-minute intervals)
+- 17.11.25 (low LAI, predominantly neutral stratification during the analyzed 10-minute intervals)
+- 14.3.26 (low LAI, stable + neutral stratification during the analyzed 10-minute intervals)
 
