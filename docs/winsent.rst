@@ -29,8 +29,8 @@ The following abbreviations are used for the research wind turbines and the four
    * - MMSE
      - Meteorological mast installed in the southeast of the test site
 
-The next two figures show the layout of the test site and schematic cross-section of the test 
-site on the hill and the lidar in the valley.
+The following figures illustrate the layout of the test site and a schematic cross-section of 
+the experimental setup, with the test site located on the hill and the lidar positioned in the valley.
 
 .. image:: images/test_site_layout.png
 .. image:: images/test_site_cross_section.png
@@ -49,7 +49,8 @@ Coordinates
 
 The current official reference system for position and elevation data in Germany is the German Reference Network (DREF91), 
 which is aligned with the European Terrestrial Reference System 1989 (ETRS89): ETRS89/DREF91/2016 + DHHN2016 (see https://epsg.io/10293).
-The location is specified in longitude and latitude, and the elevation is given in meters relative to NHN. 
+The location is specified by longitude and latitude, and the elevation is given in meters relative to Normalhöhennull (NHN), 
+the official German vertical height reference datum.
 Conversion to other reference systems is possible with very high accuracy.
 The center coordinates of the meteorological masts and turbine towers are calculated from coordinates measured 
 on site by a surveying office in March 2024. The coordinates of the lidar are obtained from GPS measurements 
@@ -59,9 +60,9 @@ taken during the installation, and the values are verified using the GIS system.
    :header-rows: 1
 
    * - Structure
-     - Longitude (°)
-     - Latitude (°) 
-     - Height above NHN (DHHN2016)
+     - Longitude [°]
+     - Latitude [°] 
+     - Height [m NHN]
    * - RWTN
      - 9.837730119766245
      - 48.666210346923343
@@ -124,7 +125,7 @@ Each point represents a measured value. The trend shows that the LAI value remai
 September and then drops to a lower level over the course of October. Therefore, all data prior to October 5, 2025, 
 will be assigned a high LAI value, and all data after October 13, 2025, will be assigned a low LAI value. 
 The period in between will be excluded from the analysis, as satellite data are not continuously available during 
-this time, making the determination of LAI impossible.
+this time.
 
 @HS Esslingen: Link zu den "besseren" LAI Daten auf Zenodo einfügen + kurze Beschreibung
 
