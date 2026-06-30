@@ -28,10 +28,10 @@
 .. - **xx**: Additional benchmark phases and milestones
 
 Description of the benchmark
-========
+============================
 
 Objective
--------
+---------
 The objective of this benchmark is to validate various numerical flow models that simulate both terrain flow and the flow around 
 wind turbines in complex terrain. The WINSENT test site, with its four meteorological measuring masts fully equipped with measurement 
 technology and its two research wind turbines, provides the ideal conditions for this. The validation will be conducted for two 
@@ -45,7 +45,7 @@ The first phase of the benchmark focusses on the validation of the inflow data. 
 regardless of the availability of the wind turbine data. Situations involving inflow from the prevailing wind direction of 
 west-northwest should be considered. The analysis should be conducted separately for the forest's leafy (high leaf area index) 
 and leafless (low leaf area index) states in the direction of the inflow. In addition, a distinction is made based on atmospheric 
-stability classes. The following table summarizes the setup for phase I. More details can be found in chapter :doc:`phase_I`. 
+stability classes. The following list summarizes the setup for phase I. More details can be found in chapter :doc:`phase_I`. 
 
 objective
     - validation of inflow data
@@ -64,5 +64,5 @@ output data
     - 10-minute mean data at specified locations
 
 Phase II
--------
+--------
 Content will be added later
