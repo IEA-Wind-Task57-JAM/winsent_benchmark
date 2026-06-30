@@ -1,6 +1,8 @@
 Benchmark phase I
 =================
 
+# TODO: Höhenangaben checken, keine Referenz a.s.l. sondern stattdessen NHN
+
 Data processing
 ---------------
 
@@ -61,8 +63,21 @@ Furthermore, the mean wind direction at an altitude of 768.8m (approx. hub heigh
    "",     "stable", "37", "v = 0.160 * (h-468.8)^0.637", "292.89"
    "",     "all", "73", "v = 0.267 * (h-468.8)^0.553", "292.45"
 
-For each data set, there is a separate file containing the inflow data from the lidar and a corresponding 
-plot showing the profiles and the power-law fit. The file name indicates which LAI and stability class are included.
+The folder structure of the inflow data is shown in the following figure. 
+
+.. image:: images/input_files_phaseI.png
+
+For each selected 10-minute period, there are two files: 
+
+- one containing the inflow data from the lidar for the selected height range (100m - 400m a.g.l.) 
+
+  ("...lidar_data.csv")
+
+- one containing the inflow data from the lidar for all available heights
+
+  ("...lidar_data_all_heights.csv") 
+
+  This might be of interest for simulations that also use data from layers higher than 400 meters (acc. to the lidar system in the valley, corresponding 868m a.s.l). 
 
 The CSV files contain the following information:
 
@@ -88,18 +103,12 @@ The CSV files contain the following information:
    * - 4
      - wind_direction
      - wind from direction [deg]
-   * - 5
-     - stability_class
-     - atmospheric stability based on the Bulk Richardson number
 
-       option "all" includes all stability classes
+Additionally, each data set includes a file listing all corresponding 10-minute periods along with 
+their respective stability classes ("all_timestamps_with_stability_classes_low_LAI.csv" and 
+"all_timestamps_with_stability_classes_high_LAI.csv"), 
+as well as a plot showing the corresponding profiles and the power-law fit (see example below). 
+The file name indicates the associated LAI category and stability class.
 
-In addition, we are providing the complete lidar data for the relevant time periods. 
-This might be of interest for simulations that also use data from layers higher than 
-400 meters (acc. to the lidar system in the valley, corresponding 868m a.s.l). 
-There is a separate file for high and low LAI, each listing all timestamps along with 
-their respective stability classes (all_timestamps_with_stability_classes_low_LAI.csv, 
-all_timestamps_with_stability_classes_high_LAI.csv). This information can be used to 
-identify the time periods of interest. The lidar data is available on a daily basis in a 
-standardized data format (see https://zenodo.org/records/2478051). The file name indicates 
-the corresponding day. 
+.. image:: images/profiles_high_LAI_stable.png
+

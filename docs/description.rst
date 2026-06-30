@@ -53,7 +53,7 @@ conditions
     - wind from west-northwest
     - high and low leaf area index
 time period
-    - 06/2025 – 03/2026
+    - 06/2025 - 03/2026
 input data
     - inflow data from the lidar in the valley
     - LAI values
