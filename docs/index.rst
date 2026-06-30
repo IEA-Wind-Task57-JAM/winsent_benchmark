@@ -3,6 +3,8 @@ WINSENT Benchmark
 
 The WINSENT benchmark is being performed under the umbrella of the IEA Wind TCP Task 57 Joint Assessment of Models. 
 
+.. image:: images/test_site_drone.jpg
+
 Intro
 -----
 
@@ -13,7 +15,7 @@ and shared reference data.
 How to Participate
 ------------------
 
-- Review the page "Description of the benchmark" for campaign context and motivation.
+- Review the page :doc:`description` for campaign context and motivation.
 - Contact the benchmark leader and participate in working group meetings.
 - Submit modeling results following guidelines given in the :doc:`submissions` page.
 
