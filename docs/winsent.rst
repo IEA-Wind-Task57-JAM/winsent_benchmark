@@ -44,6 +44,7 @@ based on measurements at hub height at MMNW in 2025.
 .. image:: images/wind_rose_MMNW.png
   :scale: 70
 
+.. _coordinates:
 Coordinates
 -----------
 
