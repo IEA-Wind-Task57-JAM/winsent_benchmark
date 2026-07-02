@@ -44,6 +44,7 @@ based on measurements at hub height at MMNW in 2025.
 .. image:: images/wind_rose_MMNW.png
   :scale: 70
 
+.. _coordinates:
 Coordinates
 -----------
 
@@ -128,5 +129,138 @@ will be assigned a high LAI value, and all data after October 13, 2025, will be 
 The period in between will be excluded from the analysis, as satellite data are not continuously available during 
 this time.
 
+For detailed LAI data see :ref:`laidata`.
+
 Terrain data
 ------------
+This section provides an overview of the geospatial datasets available for the WINSENT site.
+Data is organized by spatial extent to support both localized modeling and broader mesoscale-to-microscale coupling:
+
+-  :ref:`rad10`: High-resolution local data
+- :ref:`rad300`: Globally available data
+
+All data is available on Zenodo in two coordinate reference systems (CRS):
+
+- WGS84 (EPSG:4326) – Global latitude/longitude  
+- ETRS89-Extended (EPSG:3035) – European, used by Copernicus  
+
+Additional projections (e.g., local UTM zones), extents or resolutions are possible upon request.
+
+The data is freely available.
+For details and licensing information of individual datasets, please follow the respective links and information.
+
+.. _rad10:
+10 km radius
+^^^^^^^^^^^^
+
+Digital Terrain Model (DTM)
+"""""""""""""""""""""""""""
+Local elevation model of the ground without vegetation or buildings.  
+- Format: GeoTIFF
+- Resolution: 0.25 m.  
+
+| Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Gelaendemodelle/  
+
+| Legal information:
+- German: https://www.lgl-bw.de/Produkte/Open-Data/index.html
+- Translated: The open geodata and geodata services of the Baden-Württemberg Surveying Administration can be used free of charge under the terms of the Data License Germany - Attribution - Version 2.0 (http://www.govdata.de/dl-de/by-2-0). The attribution must be made as follows: “Data source: LGL, www.lgl-bw.de, dl-de/by-2-0”.
+
+Digital Surface Model (DSM)
+"""""""""""""""""""""""""""
+Local surface elevation including vegetation, buildings, and other structures.  
+- Format: GeoTIFF
+- Resolution: 1 m  
+
+Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Oberflaechenmodelle/DOM1/ 
+
+Legal information:
+- German: https://www.lgl-bw.de/Produkte/Open-Data/index.html  
+- Translated: The open geodata and geodata services of the Baden-Württemberg Surveying Administration can be used free of charge under the terms of the Data License Germany - Attribution - Version 2.0 (http://www.govdata.de/dl-de/by-2-0). The attribution must be made as follows: “Data source: LGL, www.lgl-bw.de, dl-de/by-2-0”.
+
+Land Cover Data
+"""""""""""""""
+See :ref:`clcdata` of the large area, it is the same data source.
+
+Leaf Area Index (LAI)
+"""""""""""""""""""""
+See :ref:`laidata` of the large area, it is the same data source.
+
+.. _rad300:
+Radius 300 km
+^^^^^^^^^^^^^
+
+Digital Elevation Model (DEM)
+"""""""""""""""""""""""""""""
+
+Global elevation model, NASADEM
+- Format: GeoTIFF
+- Resolution: 30 m  
+
+Data source: NASADEM Merged DEM Global 1 arc second V001 [Data set]. NASA Land Processes Distributed Active Archive Center. https://doi.org/10.5067/MEASURES/NASADEM/NASADEM_HGT.001 Date Accessed: 2026-06-12
+
+Legal information: https://www.earthdata.nasa.gov/data/catalog/lpcloud-nasadem-hgt-001#toc-citation
+
+.. _clcdata:
+Land Cover Data
+"""""""""""""""
+
+Copernicus Corine Land Cover Plus Backbone (CLCplus) 2023  
+- 11 land cover classes (see below)
+- Format: GeoTIFF
+- Resolution: 10 m
+  
+Data source: https://land.copernicus.eu/en/products/clc-backbone/clcplus-backbone-2023-raster-10-m-europe-2-yearly
+
+Legal information:  
+- https://doi.org/10.2909/b0bd43c6-1fa1-4d88-9c45-98b13a95d0b2  
+- https://www.copernicus.eu/en/access-data  
+- https://www.copernicus.eu/en/access-data/copyright-and-licences
+
+Legend of CLCplus classes:
+
+.. list-table:: 
+   :header-rows: 1
+
+   * - Class integer
+     - Class name
+   * - 1
+     - Sealed
+   * - 2
+     - Woody needle-leaved trees
+   * - 3
+     - Woody broad-leaved deciduous trees
+   * - 4 
+     - Woody broad-leaved evergreen trees
+   * - 5 
+     - Low-growing woody plants
+   * - 6 
+     - Permanent herbaceous
+   * - 7 
+     - Periodically herbaceous
+   * - 8 
+     - Lichens and mosses
+   * - 9 
+     - Non- and sparsely vegetated
+   * - 10 
+     - Water
+   * - 11 
+     - Snow and ice
+   * - 253 
+     - Coastal seawater buffer
+   * - 254 
+     - Outside area
+   * - 255 
+     - No data
+
+.. _laidata:
+Leaf Area Index (LAI)
+"""""""""""""""""""""
+
+- Spatial resolution: 300m
+- Temporal resolution: 10 days
+- Format: GeoTIFF
+
+The data is provided is provided in single GeoTIFF files for each 10-day period grouped in folders by month.
+
+Data source: Copernicus Leaf Area Index version 2, https://doi.org/10.2909/a696fab4-c3dc-4dcc-b1d8-6fcd9a2ce1eb
+
