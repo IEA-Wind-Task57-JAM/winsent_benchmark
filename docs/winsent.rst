@@ -103,7 +103,8 @@ shown in the schematic diagram below.
 
 .. image:: images/sensors_met_mast.png
 
-@HS Esslingen: hier fehlt jetzt noch der Niederschlagssensor, welchen wollt ihr denn verwenden?
+Please note that the ultrasonic anemometers at height 97m were out of order for an extended period of time, 
+and therefore the data from this sensor cannot be used for the benchmark.
 
 For the sake of simplicity, the benchmark assumes that all measuring instruments are positioned in the center 
 of the measuring mast and that all measuring masts are equipped identically. In reality, the measuring instruments 
