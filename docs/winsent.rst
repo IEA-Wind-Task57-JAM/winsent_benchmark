@@ -102,7 +102,8 @@ shown in the schematic diagram below.
 
 .. image:: images/sensors_met_mast.png
 
-@HS Esslingen: hier fehlt jetzt noch der Niederschlagssensor, welchen wollt ihr denn verwenden?
+Please note that the ultrasonic anemometers at height 97m were out of order for an extended period of time, 
+and therefore the data from this sensor cannot be used for the benchmark.
 
 For the sake of simplicity, the benchmark assumes that all measuring instruments are positioned in the center 
 of the measuring mast and that all measuring masts are equipped identically. In reality, the measuring instruments 
@@ -127,8 +128,5 @@ will be assigned a high LAI value, and all data after October 13, 2025, will be 
 The period in between will be excluded from the analysis, as satellite data are not continuously available during 
 this time.
 
-@HS Esslingen: Link zu den "besseren" LAI Daten auf Zenodo einfügen + kurze Beschreibung
-
 Terrain data
 ------------
-@HS Esslingen: bitte ergänzen
