@@ -136,7 +136,7 @@ Terrain data
 This section provides an overview of the geospatial datasets available for the WINSENT site.
 Data is organized by spatial extent to support both localized modeling and broader mesoscale-to-microscale coupling:
 
--  :ref:`rad10`: High-resolution local data
+- :ref:`rad10`: High-resolution local data
 - :ref:`rad300`: Globally available data
 
 All data is available on Zenodo in two coordinate reference systems (CRS):
@@ -186,7 +186,7 @@ Leaf Area Index (LAI)
 See :ref:`laidata` of the large area, it is the same data source.
 
 .. _rad300:
-Radius 300 km
+300 km radius
 ^^^^^^^^^^^^^
 
 Digital Elevation Model (DEM)
