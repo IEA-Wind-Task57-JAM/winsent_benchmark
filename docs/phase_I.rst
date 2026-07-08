@@ -42,6 +42,7 @@ The classification into stability classes is based on the proposed limit values 
 [https://iopscience.iop.org/article/10.1088/1748-9326/7/3/034035/meta].
 The stratification is assumed to be unstable if :math:`R_B<-0.17` and stable as :math:`R_B>0.06`.
 
+.. _inflow-data:
 Inflow data
 -----------
 
@@ -157,6 +158,7 @@ The file name indicates the associated LAI category and stability class.
 
 .. image:: images/profiles_high_LAI_stable.png
 
+.. _nwpdays:
 Optional: Simulation using numerical weather prediction (NWP) data
 ------------------------------------------------------------------
 
