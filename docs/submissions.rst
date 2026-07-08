@@ -22,7 +22,7 @@ optional:
 - precipitation 
 
 
-The results are to be submitted at the following **heights** in m a.g.l.:
+The variables are to be submitted at the following **heights** in m a.g.l.:
 
 - velocity, TKE: 11, 25, 35, 46, 47, 59, 74, 87, 98
 - temperature, pressure, humidity:  3, 5, 25, 46, 73, 96, 97
@@ -30,16 +30,23 @@ The results are to be submitted at the following **heights** in m a.g.l.:
 
 Please interpolate to the defined location and heights if they are not directly represented in your simulation.
 
+**Time resolution:**
+
+- One representative value for each of the six cases (heigh/low LAI and stratification), see :ref:`inflow-data`.
+- For weather based transient simulations 10 min steps or your full time resolution over the whole day, see :ref:`nwpdays`.
+
 **Format:**
-One NetCDF file for each case (heigh/low LAI and stratification) with mean/statistical values
-For transient simulations, e.g. NWP/WRF, tool chains, one file for each of the three days.
-Where one file includes all defined timesteps of the specific day.
+
+- One NetCDF file for each case. Naming: *WINSENTbench_PhaseI_<name>_<institution>_LAI<h|l>_STRAT<u|n|s>.nc*, example: *WINSENTbench_PhaseI_Example_EU_LAIl_STRATn.nc*, for the low (l) LAI, neutral (n) case, if your name is "Example" from "Example University (EU)".
+- For transient simulations, one file for each of the three days, which includes all defined timesteps of the specific day.
+  Naming: *WINSENTbench_PhaseI_<name>_<institution>_<date>.nc*, example: *WINSENTbench_PhaseI_Example_EU_20260314.nc* 
 
 Simulation setup (meta data)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 We need some information about your simulation type and setup to classify and compare the results properly.
 Requested parameters:
 
+-   Names of Participants with affiliation
 -   domain extent (size, shape and position), for all domains in case of nesting
 -   3D grid resolution
 -   Which geodata (data source resolution or which provided dataset) is used including LAI values
@@ -55,12 +62,14 @@ Requested parameters:
 -   interpolation methods (to result points and boundaries)
 
 **Format:**
-Please fill out the setup_template text file, provided on Zenodo, with all the information you have and can share.
+Please fill out the setup_template.md Markdown text file, provided on Zenodo, with all the information you have and can share.
 You may change, add or remove specific points so that it fits to your setup.
+Naming: same as for the variables but different extension (*.md*).
 
 Upload
 ^^^^^^
-tbd
+A file share upload link will be sent via E-Mail to all participants.
+Please upload your files for Phase I in a ZIP archive, named like described for the nc file.
 
 .. Instructions
 .. ------------

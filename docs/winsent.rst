@@ -136,14 +136,15 @@ Terrain data
 This section provides an overview of the geospatial datasets available for the WINSENT site.
 Data is organized by spatial extent to support both localized modeling and broader mesoscale-to-microscale coupling:
 
--  :ref:`rad10`: High-resolution local data
+- :ref:`rad10`: High-resolution local data
 - :ref:`rad300`: Globally available data
 
-All data is available on Zenodo in two coordinate reference systems (CRS):
+All terrain data is available on Zenodo in two coordinate reference systems (CRS):
 
 - WGS84 (EPSG:4326) – Global latitude/longitude  
 - ETRS89-Extended (EPSG:3035) – European, used by Copernicus  
 
+However, the LAI data is only available in EPSG:4326.
 Additional projections (e.g., local UTM zones), extents or resolutions are possible upon request.
 
 The data is freely available.
@@ -186,7 +187,7 @@ Leaf Area Index (LAI)
 See :ref:`laidata` of the large area, it is the same data source.
 
 .. _rad300:
-Radius 300 km
+300 km radius
 ^^^^^^^^^^^^^
 
 Digital Elevation Model (DEM)
@@ -259,6 +260,7 @@ Leaf Area Index (LAI)
 - Spatial resolution: 300m
 - Temporal resolution: 10 days
 - Format: GeoTIFF
+- CRS: only EPSG:4326
 
 The data is provided is provided in single GeoTIFF files for each 10-day period grouped in folders by month.
 
