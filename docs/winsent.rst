@@ -139,11 +139,12 @@ Data is organized by spatial extent to support both localized modeling and broad
 - :ref:`rad10`: High-resolution local data
 - :ref:`rad300`: Globally available data
 
-All data is available on Zenodo in two coordinate reference systems (CRS):
+All terrain data is available on Zenodo in two coordinate reference systems (CRS):
 
 - WGS84 (EPSG:4326) – Global latitude/longitude  
 - ETRS89-Extended (EPSG:3035) – European, used by Copernicus  
 
+However, the LAI data is only available in EPSG:4326.
 Additional projections (e.g., local UTM zones), extents or resolutions are possible upon request.
 
 The data is freely available.
@@ -259,6 +260,7 @@ Leaf Area Index (LAI)
 - Spatial resolution: 300m
 - Temporal resolution: 10 days
 - Format: GeoTIFF
+- CRS: only EPSG:4326
 
 The data is provided is provided in single GeoTIFF files for each 10-day period grouped in folders by month.
 
