@@ -109,6 +109,7 @@ Furthermore, the mean wind direction at an altitude of 768.80m (elevation above 
      - v = 0.267 * (h-468.8)^0.553
      - 292.45  
 
+For anyone who wants to examine the filtered lidar data in detail, we provide the processed data in CSV format.
 The folder structure of the inflow data is shown in the following figure. 
 
 .. image:: images/input_files_phaseI.png
