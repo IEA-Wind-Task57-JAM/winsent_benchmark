@@ -4,8 +4,11 @@ Submissions
 Phase I
 -------
 
-For submission, please use the template files provided on Zenodo.
+For submission, please use the template files provided on Zenodo.  
 The simulation results are to be submitted at the :ref:`MMNW position <coordinates>` at defined sensor heights.
+
+If you are not able to simulate all cases (high/low LAI and atmospheric stability), please submit at least results for 
+both LAI and neutral stability.
 
 Variables to submit
 ^^^^^^^^^^^^^^^^^^^
@@ -32,7 +35,7 @@ Please interpolate to the defined location and heights if they are not directly 
 
 **Time resolution:**
 
-- One representative value for each of the six cases (heigh/low LAI and stratification), see :ref:`inflow-data`.
+- One representative value for each of the six cases (high/low LAI and stratification), see :ref:`inflow-data`.
 - For weather based transient simulations 10 min steps or your full time resolution over the whole day, see :ref:`nwpdays`.
 
 **Format:**
@@ -62,7 +65,7 @@ Requested parameters:
 -   interpolation methods (to result points and boundaries)
 
 **Format:**
-Please fill out the setup_template.md Markdown text file, provided on Zenodo, with all the information you have and can share.
+Please fill out the template_phase1_setup.md Markdown text file, provided on Zenodo (see  submission_phase1_templates.zip), with all the information you have and can share.
 You may change, add or remove specific points so that it fits to your setup.
 Naming: same as for the variables but different extension (*.md*).
 

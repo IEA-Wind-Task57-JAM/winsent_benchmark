@@ -125,7 +125,8 @@ The trend of the LAI value over time is as follows:
 
 Each point represents a measured value. The trend shows that the LAI value remains high until the end of 
 September and then drops to a lower level over the course of October. Therefore, all data prior to October 5, 2025, 
-will be assigned a high LAI value, and all data after October 13, 2025, will be assigned a low LAI value. 
+will be assigned a high LAI value (mean value = 5.0), and all data after October 13, 2025, will be assigned a low 
+LAI value (mean value = 0.7). 
 The period in between will be excluded from the analysis, as satellite data are not continuously available during 
 this time.
 
