@@ -166,18 +166,21 @@ Local elevation model of the ground without vegetation or buildings.
 Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Gelaendemodelle/
 
 Legal information:
+
 - German: https://www.lgl-bw.de/Produkte/Open-Data/index.html
 - Translated: The open geodata and geodata services of the Baden-Württemberg Surveying Administration can be used free of charge under the terms of the Data License Germany - Attribution - Version 2.0 (http://www.govdata.de/dl-de/by-2-0). The attribution must be made as follows: “Data source: LGL, www.lgl-bw.de, dl-de/by-2-0”.
 
 Digital Surface Model (DSM)
 """""""""""""""""""""""""""
 Local surface elevation including vegetation, buildings, and other structures.  
+
 - Format: GeoTIFF
 - Resolution: 1 m  
 
 Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Oberflaechenmodelle/DOM1/ 
 
-Legal information:
+Legal information:  
+
 - German: https://www.lgl-bw.de/Produkte/Open-Data/index.html  
 - Translated: The open geodata and geodata services of the Baden-Württemberg Surveying Administration can be used free of charge under the terms of the Data License Germany - Attribution - Version 2.0 (http://www.govdata.de/dl-de/by-2-0). The attribution must be made as follows: “Data source: LGL, www.lgl-bw.de, dl-de/by-2-0”.
 
@@ -197,7 +200,8 @@ See :ref:`laidata` of the large area, it is the same data source.
 Digital Elevation Model (DEM)
 """""""""""""""""""""""""""""
 
-Global elevation model, NASADEM
+Global elevation model, NASADEM  
+
 - Format: GeoTIFF
 - Resolution: 30 m  
 
@@ -211,6 +215,7 @@ Land Cover Data
 """""""""""""""
 
 Copernicus Corine Land Cover Plus Backbone (CLCplus) 2023  
+
 - 11 land cover classes (see below)
 - Format: GeoTIFF
 - Resolution: 10 m
@@ -218,6 +223,7 @@ Copernicus Corine Land Cover Plus Backbone (CLCplus) 2023
 Data source: https://land.copernicus.eu/en/products/clc-backbone/clcplus-backbone-2023-raster-10-m-europe-2-yearly
 
 Legal information:  
+
 - https://doi.org/10.2909/b0bd43c6-1fa1-4d88-9c45-98b13a95d0b2  
 - https://www.copernicus.eu/en/access-data  
 - https://www.copernicus.eu/en/access-data/copyright-and-licences
