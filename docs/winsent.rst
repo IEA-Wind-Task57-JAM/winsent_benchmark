@@ -45,11 +45,12 @@ based on measurements at hub height at MMNW in 2025.
   :scale: 70
 
 .. _coordinates:
+
 Coordinates
 -----------
 
-The current official reference system for position and elevation data in Germany is the German Reference Network (DREF91), 
-which is aligned with the European Terrestrial Reference System 1989 (ETRS89): ETRS89/DREF91/2016 + DHHN2016 (see https://epsg.io/10293).
+The reference system used for position and elevation data in Germany is ETRS89 for horizontal coordinates and 
+DHHN2016 for height information: ETRS89 + DHHN2016 height (see https://epsg.io/9924).
 The location is specified by longitude and latitude, and the elevation is given in meters relative to Normalhöhennull (NHN), 
 the official German vertical height reference datum.
 Conversion to other reference systems is possible with very high accuracy.
@@ -65,32 +66,32 @@ taken during the installation, and the values are verified using the GIS system.
      - Latitude [°] 
      - Height [m NHN]
    * - RWTN
-     - 9.837730119766245
-     - 48.666210346923343
+     - 9.836587252381328
+     - 48.665218765920571
      - 666.03
    * - RWTS
-     - 9.837125414111535	
-     - 48.664973120775961
+     - 9.835982670586741	
+     - 48.663981687106251
      - 666.61	
    * - MMNW
-     - 9.835916275260756	
-     - 48.666156314185706
+     - 9.834773654795622	
+     - 48.665164725154781
      - 665.00
    * - MMNE
-     - 9.839397041100227	
-     - 48.666276556003453
+     - 9.838253950921127	
+     - 48.665285026524913
      - 662.47
    * - MMSW
-     - 9.835293548617226
-     - 48.664941603518201	
+     - 9.834151056044162
+     - 48.663950162673302
      - 664.57
    * - MMSE
-     - 9.838955754497034	
-     - 48.665024675916257	
+     - 9.837812762635474	
+     - 48.664033280538128	
      - 664.91
    * - Lidar (L140)
-     - 9.819179271256603
-     - 48.673039540602765
+     - 9.81918321229921
+     - 48.673003284851497
      - 468.80
 
 A \*.geojson file containing the coordinates is provided on Zenodo. 
@@ -152,6 +153,7 @@ The data is freely available.
 For details and licensing information of individual datasets, please follow the respective links and information.
 
 .. _rad10:
+
 10 km radius
 ^^^^^^^^^^^^
 
@@ -161,21 +163,24 @@ Local elevation model of the ground without vegetation or buildings.
 - Format: GeoTIFF
 - Resolution: 0.25 m.  
 
-| Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Gelaendemodelle/  
+Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Gelaendemodelle/
 
-| Legal information:
+Legal information:
+
 - German: https://www.lgl-bw.de/Produkte/Open-Data/index.html
 - Translated: The open geodata and geodata services of the Baden-Württemberg Surveying Administration can be used free of charge under the terms of the Data License Germany - Attribution - Version 2.0 (http://www.govdata.de/dl-de/by-2-0). The attribution must be made as follows: “Data source: LGL, www.lgl-bw.de, dl-de/by-2-0”.
 
 Digital Surface Model (DSM)
 """""""""""""""""""""""""""
 Local surface elevation including vegetation, buildings, and other structures.  
+
 - Format: GeoTIFF
 - Resolution: 1 m  
 
 Data source (German): https://www.lgl-bw.de/Produkte/3D-Produkte/Digitale-Oberflaechenmodelle/DOM1/ 
 
-Legal information:
+Legal information:  
+
 - German: https://www.lgl-bw.de/Produkte/Open-Data/index.html  
 - Translated: The open geodata and geodata services of the Baden-Württemberg Surveying Administration can be used free of charge under the terms of the Data License Germany - Attribution - Version 2.0 (http://www.govdata.de/dl-de/by-2-0). The attribution must be made as follows: “Data source: LGL, www.lgl-bw.de, dl-de/by-2-0”.
 
@@ -188,13 +193,15 @@ Leaf Area Index (LAI)
 See :ref:`laidata` of the large area, it is the same data source.
 
 .. _rad300:
+
 300 km radius
 ^^^^^^^^^^^^^
 
 Digital Elevation Model (DEM)
 """""""""""""""""""""""""""""
 
-Global elevation model, NASADEM
+Global elevation model, NASADEM  
+
 - Format: GeoTIFF
 - Resolution: 30 m  
 
@@ -203,10 +210,12 @@ Data source: NASADEM Merged DEM Global 1 arc second V001 [Data set]. NASA Land P
 Legal information: https://www.earthdata.nasa.gov/data/catalog/lpcloud-nasadem-hgt-001#toc-citation
 
 .. _clcdata:
+
 Land Cover Data
 """""""""""""""
 
 Copernicus Corine Land Cover Plus Backbone (CLCplus) 2023  
+
 - 11 land cover classes (see below)
 - Format: GeoTIFF
 - Resolution: 10 m
@@ -214,6 +223,7 @@ Copernicus Corine Land Cover Plus Backbone (CLCplus) 2023
 Data source: https://land.copernicus.eu/en/products/clc-backbone/clcplus-backbone-2023-raster-10-m-europe-2-yearly
 
 Legal information:  
+
 - https://doi.org/10.2909/b0bd43c6-1fa1-4d88-9c45-98b13a95d0b2  
 - https://www.copernicus.eu/en/access-data  
 - https://www.copernicus.eu/en/access-data/copyright-and-licences
@@ -255,6 +265,7 @@ Legend of CLCplus classes:
      - No data
 
 .. _laidata:
+
 Leaf Area Index (LAI)
 """""""""""""""""""""
 
