@@ -153,7 +153,7 @@ The CSV files contain the following information:
      - wind from direction [deg]
 
 Additionally, each data set includes a file listing all corresponding 10-minute periods along with 
-their respective stability classes ("all_timestamps_with_stability_classes_low_LAI.csv" and 
+their respective stability classes and the Bulk Richardson number ("all_timestamps_with_stability_classes_low_LAI.csv" and 
 "all_timestamps_with_stability_classes_high_LAI.csv"), 
 as well as a plot showing the corresponding profiles and the power-law fit (see example below). 
 The file name indicates the associated LAI category and stability class.
